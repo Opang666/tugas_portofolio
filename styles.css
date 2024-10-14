@@ -1,0 +1,108 @@
+.dot { /* Bulatan di samping nama */
+    height: 15px;
+    width: 15px;
+    background-color: dimgray; /* Warna bulat */
+    border-radius: 50%;
+    margin-right: 15px;
+    display: inline-block;
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: transparent; /* Background transparan */
+    border-bottom: none; /* Garis tipis di bawah navbar */
+    padding: 10px 0; /* Padding atas bawah */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem; /* Ukuran nama lebih besar */
+    font-weight: bold;
+    margin-left: 20px; /* Tambahkan jarak ke kiri */
+}
+
+.navbar-brand small {
+    font-size: 0.9rem; /* Ukuran jabatan lebih kecil */
+    font-weight: normal;
+    margin-left: 10px; /* Jarak antara nama dan jabatan */
+    color: steelblue; /* Warna teks jabatan */
+}
+
+/* Navbar Link Styles */
+.navbar-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-item {
+    list-style: none;
+}
+
+.nav-link {
+    color: #000; /* Warna teks hitam */
+    font-size: 1rem; /* Ukuran font link */
+    padding: 0 15px; /* Jarak antar link */
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    font-weight: 500; /* Sedikit tebal */
+    position: relative;
+}
+
+/* Garis pemisah antar link */
+.nav-link::after {
+    color: #000; /* Warna garis */
+    position: absolute;
+    right: -10px; /* Posisi garis di kanan */
+    top: 0;
+}
+
+/* Hover effect */
+.nav-link:hover {
+    color: #007bff; /* Warna biru saat hover */
+}
+
+/* Header Section */
+.header-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.header-section p.lead {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.header-section img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+/* Footer Styles */
+.footer {
+    border-top: none; /* Garis di bagian atas footer */
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background-color: transparent;
+    padding: none;
+}
+
+.footer p {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
