@@ -1,7 +1,7 @@
 .dot { /* Bulatan di samping nama */
     height: 15px;
     width: 15px;
-    background-color: dimgray; /* Warna bulat */
+    background-color: salmon; /* Warna bulat */
     border-radius: 50%;
     margin-right: 15px;
     display: inline-block;
@@ -29,10 +29,10 @@
     font-size: 0.9rem; /* Ukuran jabatan lebih kecil */
     font-weight: normal;
     margin-left: 10px; /* Jarak antara nama dan jabatan */
-    color: steelblue; /* Warna teks jabatan */
+    color: salmon; /* Warna teks jabatan */
 }
 
-/* Navbar Link Styles */
+/* Navbar Styles */
 .navbar-nav {
     display: flex;
     align-items: center;
@@ -83,26 +83,22 @@
     border-radius: 50%;
 }
 
-/* Footer Styles */
-.footer {
-    border-top: none; /* Garis di bagian atas footer */
-    width: 100%;
-    position: relative;
-    bottom: 0;
-    background-color: transparent;
-    padding: none;
+/* animasi */
+@keyframes slideInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.footer p {
-    margin-bottom: 0;
-    text-align: center;
-}
-
-.footer a {
-    color: #007bff;
-    text-decoration: none;
-}
-
-.footer a:hover {
-    text-decoration: underline;
+/* animasi untuk image */
+.header-section img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    animation: slideInUp 1.5s ease-out;
 }
