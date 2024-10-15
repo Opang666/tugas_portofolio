@@ -14,7 +14,7 @@ body {
 
 /* Navbar styles */
 .navbar {
-    background-color: gainsboro; /* Background transparan */
+    background-color: transparent; /* Background transparan */
     border-bottom: none; /* Garis tipis di bawah navbar */
     padding: 10px 0; /* Padding atas bawah */
     display: flex;
@@ -49,7 +49,7 @@ body {
 }
 
 .nav-link {
-    color: #000; /* Warna teks hitam */
+    color: salmon; /* Warna teks hitam */
     font-size: 1rem; /* Ukuran font link */
     padding: 0 15px; /* Jarak antar link */
     text-transform: uppercase;
@@ -60,7 +60,7 @@ body {
 
 /* Garis pemisah antar link */
 .nav-link::after {
-    color: #000; /* Warna garis */
+    color: salmon; /* Warna garis */
     position: absolute;
     right: -10px; /* Posisi garis di kanan */
     top: 0;
@@ -68,7 +68,7 @@ body {
 
 /* Hover effect */
 .nav-link:hover {
-    color: #007bff; /* Warna biru saat hover */
+    color: salmon; /* Warna biru saat hover */
 }
 
 /* Header Section */
