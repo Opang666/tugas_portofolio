@@ -1,6 +1,9 @@
 body {
-    background-image: url(bekgron.jpg);
+    background-image: url(bg\ portofolio.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .dot { /* Bulatan di samping nama */
@@ -89,7 +92,7 @@ body {
     border-radius: 50%;
 }
 
-/* animasi */
+/* Animasi */
 @keyframes slideInUp {
     0% {
         opacity: 0;
@@ -101,7 +104,7 @@ body {
     }
 }
 
-/* animasi untuk image */
+/* Animasi untuk image */
 .header-section img {
     width: 300px;
     height: 300px;
@@ -119,4 +122,52 @@ body {
 
 .footer-follow:hover {
     color: #333; /* Warna saat dihover */
+}
+
+.footer-social a {
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.footer-social img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
+}
+
+.footer-social a:hover img {
+    transform: scale(1.1); /* Animasi pada img sosmed */
+}
+
+/* Animasi */
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animasi teks */
+.header-section h1,
+.header-section p.lead,
+.header-section p {
+    opacity: 0; /* Awalnya tidak terlihat */
+    animation: slideUp 1s ease-out forwards; /* Menjalankan animasi */
+}
+
+.header-section h1 {
+    animation-delay: 0.2s; /* Mulai setelah 0.2 detik */
+}
+
+.header-section p.lead {
+    animation-delay: 0.4s; /* Mulai setelah 0.4 detik */
+}
+
+.header-section p {
+    animation-delay: 0.6s; /* Mulai setelah 0.6 detik */
 }
